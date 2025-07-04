@@ -1,5 +1,15 @@
 {
   "function": {
+    "add": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "get": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "userHandler": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -7,6 +17,38 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_add_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "add"
+        }
+      ]
+    },
+    "AMPLIFY_function_add_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "add"
+        }
+      ]
+    },
+    "AMPLIFY_function_get_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "get"
+        }
+      ]
+    },
+    "AMPLIFY_function_get_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "get"
+        }
+      ]
+    },
     "AMPLIFY_function_userHandler_deploymentBucketName": {
       "usedBy": [
         {

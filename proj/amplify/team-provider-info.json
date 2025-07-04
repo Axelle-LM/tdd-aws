@@ -15,7 +15,15 @@
       "function": {
         "userHandler": {
           "deploymentBucketName": "amplify-tdd-dev-829da-deployment",
-          "s3Key": "amplify-builds/userHandler-327653334f496b324e42-build.zip"
+          "s3Key": "amplify-builds/userHandler-4e676d436a686977532f-build.zip"
+        },
+        "add": {
+          "deploymentBucketName": "amplify-tdd-dev-829da-deployment",
+          "s3Key": "amplify-builds/add-4942364a6d4a58634371-build.zip"
+        },
+        "get": {
+          "deploymentBucketName": "amplify-tdd-dev-829da-deployment",
+          "s3Key": "amplify-builds/get-59306450496c79345762-build.zip"
         }
       },
       "storage": {

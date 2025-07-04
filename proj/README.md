@@ -1,29 +1,34 @@
-# proj
+# Projet AWS + Vue
 
-This template should help get you started developing with Vue 3 in Vite.
+Projet de cours pour comprendre AWS Amplify, DynamoDB et l'importance de tester son code.
+L'objectif a été d'ajouter/récupérer des utilisateurs via des lambdas fonctions, et d'utiliser des tests unitaires pour s'assurer de couvrir la plupart des cas.
 
-## Recommended IDE Setup
+## Comment ça marche ?
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+* `add_user()` : Ajoute un user dans une table DynamoDB.
+* `get_user()` : Récupère un user grâce à son id.
+* `user_handler` : Lambda qui gère les requêtes POST et GET.
 
-## Customize configuration
+## Installation
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+```bash
+# clone
+git clone
+cd ./proj-aws/amplify
 
-## Project Setup
-
-```sh
-npm install
+# backend (Python)
+python -m venv venv
+venv\Scripts\activate
 ```
 
-### Compile and Hot-Reload for Development
+## Lancer les tests
 
-```sh
-npm run dev
+```bash
+pytest  # devrait tout passer à 100 %
 ```
 
-### Compile and Minify for Production
+Couverture :
 
-```sh
-npm run build
+```bash
+pytest --cov
 ```
